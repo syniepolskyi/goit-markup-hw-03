@@ -1,0 +1,127 @@
+/* header */
+
+.header {
+    border-bottom: 1px solid transparent;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* на сторінці portfolio */
+
+.header-border-bottom {
+    border-bottom: 1px solid var(--border-color);
+}
+
+
+/* Панель навігації шапки - nav */
+
+.header-navbar {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Меню навігації */
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+
+/* Елемент меню навігації, крім останнього */
+
+.nav-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+
+/* посилання в елементах меню шапки */
+
+.nav-link {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+
+/* hover і focus посилання в елементах меню шапки */
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--hover-color);
+}
+
+
+/* список контактів в шапці */
+
+.header-contact-list {
+    display: flex;
+    list-style: none;
+}
+
+
+/* елемент списку контактів в шапці, крім останнього */
+
+.contact-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+
+/* посилання в елементах списку контактів шапки */
+
+.nav-alt-link {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+
+/* hover і focus посилання в елементах меню шапки */
+
+.nav-alt-link:hover,
+.nav-alt-link:focus {
+    color: var(--hover-color);
+}
+
+
+/* текстовий логотип */
+
+.logo {
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    color: var(--main-color);
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+
+/* преша частина текстового логотипу */
+
+.logo>span:first-child {
+    color: var(--hover-color);
+}
+
+
+/* logo-header*/
+
+.logo-header {
+    padding-right: 53px;
+}

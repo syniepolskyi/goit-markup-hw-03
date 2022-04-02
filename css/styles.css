@@ -1,0 +1,379 @@
+@import url(../css/_fonts.css);
+@import url(../css/_vars.css);
+@import url(../css/_header.css);
+@import url(../css/_footer.css);
+
+/* Для всього тіла сторінки */
+
+body {
+    color: var(--main-color);
+    background-color: var(--bg-color);
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+/* для всіх кнопок */
+
+.btn {
+    cursor: pointer;
+}
+
+
+/* для всіх p */
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* глобальний контейнер */
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* для всіх секцій */
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+
+/* колір посилання на поточну сторінку в nav */
+
+.current {
+    color: var(--hover-color);
+}
+
+
+/****************************/
+
+
+/*        index.html        */
+
+
+/****************************/
+
+
+/* секція hero */
+
+.hero {
+    background-color: var(--alt-bg-color);
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+
+/* основний надпис секції */
+
+.hero-title {
+    margin: 0 auto;
+    width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--bg-color);
+}
+
+
+/* основна (і єдина) кнопка в hero - замовити  */
+
+.order-btn {
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+    background-color: var(--hover-color);
+    border: 1px solid var(--hover-color);
+    border-radius: 4px;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--bg-color);
+}
+
+.order-btn:hover,
+.order-btn:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: var(--btn-hover-color);
+}
+
+
+/* список характеристик */
+
+.detail-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* елемент списку характеристик */
+
+.detail-item {
+    width: 270px;
+}
+
+
+/* заголовки в елементах списку характерситик */
+
+.detail-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* текст в елементах списку характерситик */
+
+.detail-descr {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);
+    margin: 0;
+    margin-top: 10px;
+}
+
+
+/* секція - чим займається веб-студія */
+
+.activity-section {
+    padding-top: 0;
+}
+
+
+/* заголовок секції зайнятості */
+
+.activity-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* список з зображеннями зайнятості */
+
+.img-activity-container {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding-left: 0;
+}
+
+
+/* секція опису команди */
+
+.team {
+    background-color: var(--button-border-color);
+}
+
+
+/* заголовк секції команди */
+
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+    padding: 0;
+    margin: 0;
+}
+
+
+/* список працівників компанії з зображеннями */
+
+.img-team-container {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 50px;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+
+/* елемент списку - працівник */
+
+.team-item {
+    background: var(--bg-color);
+    /* material shadow v1 */
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 30px;
+}
+
+
+/* Прізвище, ім'я - як тайтл */
+
+.teammate {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+
+/* посада працівника */
+
+.position {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);
+    margin-top: 10px;
+}
+
+
+/****************************/
+
+
+/*      portfolio.html      */
+
+
+/****************************/
+
+
+/* список секції фільтру */
+
+.filter-buttons {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* елемент списку фільтру */
+
+.filter-button-item {
+    margin-right: 8px;
+}
+
+
+/* кнопки у фільтрі */
+
+.btn-filter {
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--main-color);
+    background-color: var(--button-border-color);
+    border: 1px solid var(--button-border-color);
+    border-radius: 4px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+}
+
+
+/* hover і focus кнопки у фільтрі */
+
+.btn-filter:hover,
+.btn-filter:focus {
+    background-color: var(--hover-color);
+    border: 1px solid var(--hover-color);
+    color: var(--bg-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+
+/* список робіт */
+
+.work-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-top: 20px;
+}
+
+
+/* елемент списку робіт */
+
+.work-item {
+    width: 370px;
+    border: 1px solid var(--item-border-color);
+    box-sizing: border-box;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+
+
+/* заголовки елементів списку робіт */
+
+.work-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-bottom: 0;
+    margin-top: 20px;
+    padding-left: 24px;
+}
+
+
+/* тексти елементів списку робіт  */
+
+.work-descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    margin-bottom: 0;
+    margin-top: 4px;
+    padding-left: 24px;
+    color: var(--secondary-color);
+}

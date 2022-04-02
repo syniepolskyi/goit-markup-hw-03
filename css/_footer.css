@@ -1,0 +1,71 @@
+/*****************************/
+
+
+/*           футер           */
+
+
+/*****************************/
+
+
+/* футер */
+
+.footer {
+    background-color: var(--alt-bg-color);
+}
+
+.footer-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+/* друга частина лого в футері */
+
+.logo-footer span:last-child {
+    color: var(--bg-color);
+}
+
+
+/* елемент address футеру */
+
+.footer-address {
+    margin-top: 20px;
+}
+
+
+/* список контактів у футері */
+
+.address-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* елементи списку контактів у футері */
+
+.address-item {
+    margin-top: 9px;
+}
+
+
+/* посилання контактів у футері */
+
+.footer-link {
+    font-style: normal;
+    text-decoration: none;
+    color: var(--footer-link-color);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+
+/* притаманно лише для адреси */
+
+.address-link {
+    color: var(--bg-color);
+}
+
+
+/********/
