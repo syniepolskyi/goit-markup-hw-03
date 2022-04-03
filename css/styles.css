@@ -66,7 +66,7 @@ img {
 
 /* колір посилання на поточну сторінку в nav */
 
-.current {
+a.current {
     color: var(--hover-color);
 }
 
